@@ -48,7 +48,7 @@
 	border: none;
 }</string>
   </property>
-  <layout class="QHBoxLayout" name="horizontalLayout">
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0">
    <property name="spacing">
     <number>10</number>
    </property>
@@ -67,7 +67,7 @@
    <item>
     <widget class="QPushButton" name="NameBtn">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>

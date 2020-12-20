@@ -96,7 +96,7 @@
 	qproperty-alignment: 'AlignVCenter | AlignVCenter';
 }</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
+  <layout class="QVBoxLayout" name="verticalLayout">
    <property name="spacing">
     <number>0</number>
    </property>
@@ -293,6 +293,19 @@
       <number>100</number>
      </property>
     </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>212</height>
+      </size>
+     </property>
+    </spacer>
    </item>
   </layout>
  </widget>

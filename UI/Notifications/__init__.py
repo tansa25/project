@@ -8,8 +8,8 @@ class NotificationsScene(CompositeScene):
         CompositeScene.__init__(self, path)
         self.total = 0
 
-        self.addNotification('Apple now cost 5$ more!!!')
-        self.addNotification('IBM price dropped to 300$')
+        # self.addNotification('Apple now cost 5$ more!!!')
+        # self.addNotification('IBM price dropped to 300$')
 
         self.Notifications.addSpacerItem(QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding))
 

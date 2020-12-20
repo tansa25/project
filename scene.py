@@ -15,7 +15,16 @@ class Scene(QWidget):
 
     @staticmethod
     def onclick(btnObject, func):
+        try:
+            btnObject.clicked.disconnect()
+        except Exception:
+            pass
+
         btnObject.clicked.connect(func)
+
+    @staticmethod
+    def setIcon(btnObject, iconPath):
+        btnObject.setIcon(QtGui.QIcon(iconPath))
 
     @staticmethod
     def changeButtonColor(btnObject, color):
@@ -28,6 +37,7 @@ class Placeholder():
     def __init__(self, name, object_, initScene):
         self.name = name
         self.object = object_
+        self.scene = None
         self.changeScene(initScene)
 
     def clear(self):
